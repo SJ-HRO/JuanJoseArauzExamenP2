@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JuanJoseArauzExamenP2.MainPage">
+    <VerticalStackLayout Spacing="15" Padding="20" VerticalOptions="Center">
+        <Label Text = "Ingrese un numero de telefono"
+               FontSize ="20"/>
+        <Entry x:Name = "PhoneNumberText"
+               Text = "09...." />
+        <Button x:Name = "Recargar"
+                Text = "Recargar"
+                Clicked = "Recarga"/>
+    </VerticalStackLayout>
+</ContentPage>
