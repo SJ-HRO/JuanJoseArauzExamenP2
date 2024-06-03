@@ -22,6 +22,11 @@
             }
 
         }
+        private async void HandleCheck(object sender, System.EventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            string Text = "Ha seleccionado una recarga de: " + rb.GroupName;
+        }
     }
 
 }

@@ -7,6 +7,12 @@
                FontSize ="20"/>
         <Entry x:Name = "PhoneNumberText"
                Text = "09...." />
+        <RadioButton x:Name="3" Margin="5" IsChecked="HandleCheck"
+     GroupName="3" Content="First Choice" />
+        <RadioButton x:Name="5" Margin="5" IsChecked="HandleCheck"
+     GroupName="5" Content="Second Choice" />
+        <RadioButton x:Name="10" Margin="5" IsChecked="HandleCheck"
+     GroupName="10" Content="Third Choice" />
         <Button x:Name = "Recargar"
                 Text = "Recargar"
                 Clicked = "Recarga"/>
