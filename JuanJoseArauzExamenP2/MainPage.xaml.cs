@@ -1,17 +1,21 @@
-﻿namespace JuanJoseArauzExamenP2
+﻿
+namespace JuanJoseArauzExamenP2
 {
     public partial class MainPage : ContentPage
     {
         string Numero;
 
-        private void Recarga(object sender, EventArgs e)
+
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private async void Recarga(object sender, EventArgs e)
         {
             string Numero = PhoneNumberText.Text;
             Numero = JuanJoseArauzExamenP2.Celular.ToNumber(Numero);
-        }
-
-        async void EnRecarga(object sender, System.EventArgs e)
-        {
+            
             if (await this.DisplayAlert(
        "Confirmacion",
        "¿Desea recargar la cantidad seleccionada?",
@@ -20,12 +24,6 @@
             {
                 await DisplayAlert("Finalizado", "Recarga exitosa", "OK");
             }
-
-        }
-        private async void HandleCheck(object sender, System.EventArgs e)
-        {
-            RadioButton rb = sender as RadioButton;
-            string Text = "Ha seleccionado una recarga de: " + rb.GroupName;
         }
     }
 
